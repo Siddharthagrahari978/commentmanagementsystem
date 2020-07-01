@@ -56,7 +56,7 @@ $array_data = "";
 <!DOCTYPE html>  
  <html>  
       <head>  
-           <title>Webslesson Tutorial | Append Data to JSON File using PHP</title>  
+           <title>Sign Up with us</title>  
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
@@ -64,7 +64,7 @@ $array_data = "";
       <body>  
            <br />  
            <div class="container" style="width:500px;">  
-                <h3 align="">Append Data to JSON File</h3><br />                 
+                <h3 align="">Sign Up!</h3><br />                 
                 <form method="post">  
                      <?php   
                      if(isset($error))  
