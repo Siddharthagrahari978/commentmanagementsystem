@@ -102,6 +102,11 @@ if($_POST){
 
             <!-- Sign in button -->
             <button class="btn btn-success btn-block" type="submit">Login</button>
+		
+	    <div style="margin-bottom: 3rem;">
+              <!-- Sign Up -->
+              <a href="sign-up.php">Sign Up</a>
+            </div>
 
 
             <!-- Social login -->
