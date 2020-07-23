@@ -40,7 +40,7 @@ $array_data = "";
                 $final_data = json_encode($array_data);  
                 if(file_put_contents('database.json', $final_data))  
                 {  
-                     $message = "<label class='text-success'>Signup Successfull...</p>";  
+                     $message = "<div class="alert alert-success" role="alert">Signup Successfull...</div>";  
                 }  
            }  
            else  
@@ -65,7 +65,7 @@ $array_data = "";
            <br />  
            <div class="container" style="width:500px;">  
                 <h3 align="">Sign Up!</h3><br /> 
-		<div class="alert alert-success" role="alert"><?php if(isset($message)){echo $message."\n";}?></div>
+		<?php if(isset($message)){echo $message."\n";}?>
                 <form method="post">  
                      <?php   
                      if(isset($error))  
