@@ -40,7 +40,7 @@ $array_data = "";
                 $final_data = json_encode($array_data);  
                 if(file_put_contents('database.json', $final_data))  
                 {  
-                     $message = "<label class='text-success'>File Appended Success fully</p>";  
+                     $message = "<label class='text-success'>Signup Successfull...</p>";  
                 }  
            }  
            else  
@@ -64,7 +64,8 @@ $array_data = "";
       <body>  
            <br />  
            <div class="container" style="width:500px;">  
-                <h3 align="">Sign Up!</h3><br />                 
+                <h3 align="">Sign Up!</h3><br /> 
+		<div class="alert alert-success" role="alert"><?php if(isset($message)){echo $message."\n";}?></div>
                 <form method="post">  
                      <?php   
                      if(isset($error))  
@@ -86,17 +87,12 @@ $array_data = "";
 				 <label>Address</label>  
                      <input type="text" name="address" class="form-control" /><br />
 				 
-                     <input type="submit" name="submit" value="Append" class="btn btn-success" /><br />  
+                     <input type="submit" name="submit" value="Signup" class="btn btn-success" /><br />  
                      
-			   	<br />
-			   	<a class="btn btn-info" href="index.php?info=1">Info</a>
-                     <?php  
-                     if(isset($message))  
-                     {  
-                          echo $message."\n";
-				   	 print_r($array_data);
-                     }  
-                     ?>  
+		     <br />
+		     <a class="btn btn-info" href="/">Back to login page</a>
+		     
+                     
                 </form>  
            </div>  
            <br />  
